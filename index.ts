@@ -15,8 +15,7 @@
                 return ("O Quadrado de " + this.a + " é igual a " + A + "cm");
             }
         }
-        const quadrdrado = new Quadrado(22);
-        console.log(quadrdrado.getQuadrado());
+
 
         
 // Calcular a área de um rectángulo A = a x b
@@ -34,8 +33,7 @@
                     return "A área do rectagulo é igual a " + A + "cm";
                 }
             }
-            const rectangulo = new Rectangulo(17, 22);
-            console.log(rectangulo.getRectangulo());
+            
     
     //Calcular a área de um triângulo A = (bxh)/2
         
@@ -48,11 +46,10 @@
             }
             getTriangulo(): number|string{
                 let A = (this.b * this.h)/2
-                return " A área do triangulo é igual a " + A + "cm²"
+                return "A área do triangulo é igual a " + A + "cm²"
             }
         }
-        const triangulo = new Triangulo(12, 8);
-        console.log(triangulo.getTriangulo());
+        
 
 
         // Calcular a área de um paralelograma A = bxh
@@ -69,8 +66,7 @@
                 return "A área do paralelograma é igual a " + A + "cm"
             }
         }
-        const geoParalelograma = new GeoParalelograma(15, 20);
-        console.log(geoParalelograma.getParalelograma());
+        
 
 
 
@@ -91,8 +87,7 @@
                 return "A área da Trapézia é igual a " + A + "cm"
             }
         }
-        const geometriaTrapezia = new GeometriaTrapezia(7, 9, 4);
-        console.log(geometriaTrapezia.getTrapezio());
+        
 
 
         //calcular a área de um circulo A = pi * r²
@@ -108,6 +103,17 @@
                 return "A área do circulo é igual a " + A + "cm"
             }
             }
+
+        const quadrdrado = new Quadrado(22);
+        console.log(quadrdrado.getQuadrado());
+        const rectangulo = new Rectangulo(17, 22);
+        console.log(rectangulo.getRectangulo());
+        const triangulo = new Triangulo(12, 8);
+        console.log(triangulo.getTriangulo());
+        const geoParalelograma = new GeoParalelograma(15, 20);
+        console.log(geoParalelograma.getParalelograma());
+        const geometriaTrapezia = new GeometriaTrapezia(7, 9, 4);
+        console.log(geometriaTrapezia.getTrapezio());
         const circuloGeo = new CirculoGeo(32, 24);
         console.log(circuloGeo.getCirculo());
 
