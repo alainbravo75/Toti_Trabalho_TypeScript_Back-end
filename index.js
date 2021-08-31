@@ -12,8 +12,6 @@ var Quadrado = /** @class */ (function () {
     };
     return Quadrado;
 }());
-var quadrdrado = new Quadrado(22);
-console.log(quadrdrado.getQuadrado());
 // Calcular a área de um rectángulo A = a x b
 var Rectangulo = /** @class */ (function () {
     function Rectangulo(a, b) {
@@ -26,8 +24,6 @@ var Rectangulo = /** @class */ (function () {
     };
     return Rectangulo;
 }());
-var rectangulo = new Rectangulo(17, 22);
-console.log(rectangulo.getRectangulo());
 //Calcular a área de um triângulo A = (bxh)/2
 var Triangulo = /** @class */ (function () {
     function Triangulo(b, h) {
@@ -36,12 +32,10 @@ var Triangulo = /** @class */ (function () {
     }
     Triangulo.prototype.getTriangulo = function () {
         var A = (this.b * this.h) / 2;
-        return " A área do triangulo é igual a " + A + "cm²";
+        return "A área do triangulo é igual a " + A + "cm²";
     };
     return Triangulo;
 }());
-var triangulo = new Triangulo(12, 8);
-console.log(triangulo.getTriangulo());
 // Calcular a área de um paralelograma A = bxh
 var GeoParalelograma = /** @class */ (function () {
     function GeoParalelograma(b, h) {
@@ -54,8 +48,6 @@ var GeoParalelograma = /** @class */ (function () {
     };
     return GeoParalelograma;
 }());
-var geoParalelograma = new GeoParalelograma(15, 20);
-console.log(geoParalelograma.getParalelograma());
 //clacular a área de uma trapézia A = (B+b/2)xh
 var GeometriaTrapezia = /** @class */ (function () {
     function GeometriaTrapezia(B, b, h) {
@@ -69,8 +61,6 @@ var GeometriaTrapezia = /** @class */ (function () {
     };
     return GeometriaTrapezia;
 }());
-var geometriaTrapezia = new GeometriaTrapezia(7, 9, 4);
-console.log(geometriaTrapezia.getTrapezio());
 //calcular a área de um circulo A = pi * r²
 var CirculoGeo = /** @class */ (function () {
     function CirculoGeo(pi, r) {
@@ -83,6 +73,16 @@ var CirculoGeo = /** @class */ (function () {
     };
     return CirculoGeo;
 }());
+var quadrdrado = new Quadrado(22);
+console.log(quadrdrado.getQuadrado());
+var rectangulo = new Rectangulo(17, 22);
+console.log(rectangulo.getRectangulo());
+var triangulo = new Triangulo(12, 8);
+console.log(triangulo.getTriangulo());
+var geoParalelograma = new GeoParalelograma(15, 20);
+console.log(geoParalelograma.getParalelograma());
+var geometriaTrapezia = new GeometriaTrapezia(7, 9, 4);
+console.log(geometriaTrapezia.getTrapezio());
 var circuloGeo = new CirculoGeo(32, 24);
 console.log(circuloGeo.getCirculo());
 /*
